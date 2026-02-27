@@ -1,0 +1,30 @@
+[2026-02-27T22:09:59.056+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-27T22:09:59.063+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Loan_Default_Prediction.build_model_task manual__2026-02-27T22:09:54.907917+00:00 [queued]>
+[2026-02-27T22:09:59.065+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Loan_Default_Prediction.build_model_task manual__2026-02-27T22:09:54.907917+00:00 [queued]>
+[2026-02-27T22:09:59.065+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-02-27T22:09:59.069+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): build_model_task> on 2026-02-27 22:09:54.907917+00:00
+[2026-02-27T22:09:59.072+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=142) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-02-27T22:09:59.073+0000] {standard_task_runner.py:63} INFO - Started process 154 to run task
+[2026-02-27T22:09:59.073+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Loan_Default_Prediction', 'build_model_task', 'manual__2026-02-27T22:09:54.907917+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/loan_dag.py', '--cfg-path', '/tmp/tmptt3j_9sq']
+[2026-02-27T22:09:59.074+0000] {standard_task_runner.py:91} INFO - Job 5: Subtask build_model_task
+[2026-02-27T22:09:59.087+0000] {task_command.py:426} INFO - Running <TaskInstance: Loan_Default_Prediction.build_model_task manual__2026-02-27T22:09:54.907917+00:00 [running]> on host a1a110c5ec07
+[2026-02-27T22:09:59.113+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='balaji' AIRFLOW_CTX_DAG_ID='Loan_Default_Prediction' AIRFLOW_CTX_TASK_ID='build_model_task' AIRFLOW_CTX_EXECUTION_DATE='2026-02-27T22:09:54.907917+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-27T22:09:54.907917+00:00'
+[2026-02-27T22:09:59.113+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-27T22:09:59.118+0000] {logging_mixin.py:188} INFO - ==================================================
+[2026-02-27T22:09:59.118+0000] {logging_mixin.py:188} INFO - TASK 3: Building and Saving Model
+[2026-02-27T22:09:59.118+0000] {logging_mixin.py:188} INFO - ==================================================
+[2026-02-27T22:09:59.159+0000] {logging_mixin.py:188} INFO - ✓ Model trained successfully
+[2026-02-27T22:09:59.159+0000] {logging_mixin.py:188} INFO - ✓ Training accuracy: 100.00%
+[2026-02-27T22:09:59.159+0000] {logging_mixin.py:188} INFO - ✓ Top 3 important features:
+[2026-02-27T22:09:59.159+0000] {logging_mixin.py:188} INFO -   - income: 0.2200
+[2026-02-27T22:09:59.159+0000] {logging_mixin.py:188} INFO -   - employment_years: 0.1600
+[2026-02-27T22:09:59.159+0000] {logging_mixin.py:188} INFO -   - debt_to_income: 0.1600
+[2026-02-27T22:09:59.161+0000] {logging_mixin.py:188} INFO - ✓ Model saved to /opt/***/dags/model/loan_model.pkl
+[2026-02-27T22:09:59.161+0000] {python.py:237} INFO - Done. Returned value was: b'\x80\x04\x95\xa0\x01\x00\x00\x00\x00\x00\x00}\x94(\x8c\x0etrain_accuracy\x94G?\xf0\x00\x00\x00\x00\x00\x00\x8c\x12feature_importance\x94}\x94(\x8c\x03age\x94\x8c\x15numpy.core.multiarray\x94\x8c\x06scalar\x94\x93\x94\x8c\x05numpy\x94\x8c\x05dtype\x94\x93\x94\x8c\x02f8\x94\x89\x88\x87\x94R\x94(K\x03\x8c\x01<\x94NNNJ\xff\xff\xff\xffJ\xff\xff\xff\xffK\x00t\x94bC\x08\xa4p=\n\xd7\xa3\xc0?\x94\x86\x94R\x94\x8c\x06income\x94h\x07h\rC\x08)\\\x8f\xc2\xf5(\xcc?\x94\x86\x94R\x94\x8c\x0bloan_amount\x94h\x07h\rC\x08\xa4p=\n\xd7\xa3\xc0?\x94\x86\x94R\x94\x8c\x0ccredit_score\x94h\x07h\rC\x08\xa4p=\n\xd7\xa3\xc0?\x94\x86\x94R\x94\x8c\x10employment_years\x94h\x07h\rC\x08{\x14\xaeG\xe1z\xc4?\x94\x86\x94R\x94\x8c\x0edebt_to_income\x94h\x07h\rC\x08{\x14\xaeG\xe1z\xc4?\x94\x86\x94R\x94\x8c\x11previous_defaults\x94h\x07h\rC\x08\xecQ\xb8\x1e\x85\xeb\xb1?\x94\x86\x94R\x94\x8c\x14loan_purpose_encoded\x94h\x07h\rC\x08\x00\x00\x00\x00\x00\x00\x00\x00\x94\x86\x94R\x94uu.'
+[2026-02-27T22:09:59.161+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-27T22:09:59.167+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Loan_Default_Prediction, task_id=build_model_task, run_id=manual__2026-02-27T22:09:54.907917+00:00, execution_date=20260227T220954, start_date=20260227T220959, end_date=20260227T220959
+[2026-02-27T22:09:59.215+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-02-27T22:09:59.223+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-02-27T22:09:59.224+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
