@@ -536,3 +536,98 @@ File Path                          PID    Runtime      # DAGs    # Errors  Last 
 /opt/airflow/dags/src/pipeline.py                           0           0  0.65s           2026-02-27T22:37:12
 ================================================================================
 [2026-02-27T22:37:38.180+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2026-02-27T22:40:19.657+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2026-02-27T22:40:19.659+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2026-02-27T22:40:19.659+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-02-27T22:40:19.659+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-02-27T22:40:19.672+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2026-02-27T22:40:19.744+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/loan_dag.py         70  0.05s             0           0
+/opt/airflow/dags/src/pipeline.py     71  0.03s             0           0
+================================================================================
+[2026-02-27T22:40:49.775+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/loan_dag.py                               1           0  1.90s           2026-02-27T22:40:21
+/opt/airflow/dags/src/pipeline.py                           0           0  1.60s           2026-02-27T22:40:21
+================================================================================
+[2026-02-27T22:41:19.931+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/src/pipeline.py                           0           0  1.20s           2026-02-27T22:40:52
+/opt/airflow/dags/loan_dag.py                               1           0  1.01s           2026-02-27T22:40:52
+================================================================================
+[2026-02-27T22:41:50.129+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/loan_dag.py                               1           0  0.90s           2026-02-27T22:41:23
+/opt/airflow/dags/src/pipeline.py                           0           0  0.86s           2026-02-27T22:41:23
+================================================================================
+[2026-02-27T22:42:20.200+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/loan_dag.py                               1           0  0.81s           2026-02-27T22:41:54
+/opt/airflow/dags/src/pipeline.py                           0           0  0.77s           2026-02-27T22:41:54
+================================================================================
+[2026-02-27T22:42:50.309+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/loan_dag.py                               1           0  0.85s           2026-02-27T22:42:26
+/opt/airflow/dags/src/pipeline.py                           0           0  0.80s           2026-02-27T22:42:26
+================================================================================
+[2026-02-27T22:43:20.588+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/loan_dag.py                               1           0  0.66s           2026-02-27T22:42:57
+/opt/airflow/dags/src/pipeline.py                           0           0  0.64s           2026-02-27T22:42:57
+================================================================================
+[2026-02-27T22:43:51.312+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/loan_dag.py                               1           0  0.84s           2026-02-27T22:43:28
+/opt/airflow/dags/src/pipeline.py                           0           0  0.81s           2026-02-27T22:43:28
+================================================================================
+[2026-02-27T22:44:22.313+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/loan_dag.py                               1           0  0.73s           2026-02-27T22:43:59
+/opt/airflow/dags/src/pipeline.py                           0           0  0.71s           2026-02-27T22:43:59
+================================================================================
+[2026-02-27T22:44:53.255+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/loan_dag.py                               1           0  0.68s           2026-02-27T22:44:30
+/opt/airflow/dags/src/pipeline.py                           0           0  0.63s           2026-02-27T22:44:30
+================================================================================

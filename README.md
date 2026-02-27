@@ -210,22 +210,30 @@ After running the pipeline, the `evaluate_task` logs will display:
 
 ```
 📊 RESULTS:
-  Training Accuracy: XX.XX%
-  Test Accuracy: XX.XX%
+  Training Accuracy: 100.00%%
+  Test Accuracy: 100.00%
 
 📋 Confusion Matrix:
-  [[TN  FP]
-   [FN  TP]]
+  [[4  0]
+   [0  2]]
 
 📈 Classification Report:
-              precision    recall  f1-score   support
-  No Default       X.XX      X.XX      X.XX         X
-     Default       X.XX      X.XX      X.XX         X
+[2026-02-27, 22:10:00 UTC] {logging_mixin.py:188} INFO -               precision    recall  f1-score   support
+  No Default       1.00      1.00      1.00         4
+     Default       1.00      1.00      1.00         2
+    accuracy                           1.00         6
+   macro avg       1.00      1.00      1.00         6
+weighted avg       1.00      1.00      1.00         6
 
 🎯 Feature Importance Ranking:
-  1. credit_score: 0.XXXX
-  2. debt_to_income: 0.XXXX
-  3. income: 0.XXXX
+[2026-02-27, 22:10:00 UTC] {logging_mixin.py:188} INFO -   1. income: 0.2200
+[2026-02-27, 22:10:00 UTC] {logging_mixin.py:188} INFO -   2. employment_years: 0.1600
+[2026-02-27, 22:10:00 UTC] {logging_mixin.py:188} INFO -   3. debt_to_income: 0.1600
+[2026-02-27, 22:10:00 UTC] {logging_mixin.py:188} INFO -   4. age: 0.1300
+[2026-02-27, 22:10:00 UTC] {logging_mixin.py:188} INFO -   5. loan_amount: 0.1300
+[2026-02-27, 22:10:00 UTC] {logging_mixin.py:188} INFO -   6. credit_score: 0.1300
+[2026-02-27, 22:10:00 UTC] {logging_mixin.py:188} INFO -   7. previous_defaults: 0.0700
+[2026-02-27, 22:10:00 UTC] {logging_mixin.py:188} INFO -   8. loan_purpose_encoded: 0.0000
   ...
 ```
 
