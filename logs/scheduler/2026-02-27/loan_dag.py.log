@@ -257,3 +257,42 @@
 [2026-02-27T22:26:52.446+0000] {processor.py:161} INFO - Started process (PID=1163) to work on /opt/airflow/dags/loan_dag.py
 [2026-02-27T22:26:52.447+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/loan_dag.py for tasks to queue
 [2026-02-27T22:26:52.449+0000] {logging_mixin.py:188} INFO - [2026-02-27T22:26:52.448+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/loan_dag.py
+[2026-02-27T22:26:53.206+0000] {processor.py:840} INFO - DAG(s) 'Loan_Default_Prediction' retrieved from /opt/airflow/dags/loan_dag.py
+[2026-02-27T22:26:53.220+0000] {logging_mixin.py:188} INFO - [2026-02-27T22:26:53.220+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-02-27T22:26:53.224+0000] {logging_mixin.py:188} INFO - [2026-02-27T22:26:53.224+0000] {dag.py:3954} INFO - Setting next_dagrun for Loan_Default_Prediction to None, run_after=None
+[2026-02-27T22:26:53.231+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/loan_dag.py took 0.793 seconds
+[2026-02-27T22:27:23.553+0000] {processor.py:161} INFO - Started process (PID=1193) to work on /opt/airflow/dags/loan_dag.py
+[2026-02-27T22:27:23.556+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/loan_dag.py for tasks to queue
+[2026-02-27T22:27:23.564+0000] {logging_mixin.py:188} INFO - [2026-02-27T22:27:23.564+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/loan_dag.py
+[2026-02-27T22:27:24.224+0000] {processor.py:840} INFO - DAG(s) 'Loan_Default_Prediction' retrieved from /opt/airflow/dags/loan_dag.py
+[2026-02-27T22:27:24.235+0000] {logging_mixin.py:188} INFO - [2026-02-27T22:27:24.235+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-02-27T22:27:24.239+0000] {logging_mixin.py:188} INFO - [2026-02-27T22:27:24.239+0000] {dag.py:3954} INFO - Setting next_dagrun for Loan_Default_Prediction to None, run_after=None
+[2026-02-27T22:27:24.243+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/loan_dag.py took 0.701 seconds
+[2026-02-27T22:27:54.538+0000] {processor.py:161} INFO - Started process (PID=1223) to work on /opt/airflow/dags/loan_dag.py
+[2026-02-27T22:27:54.540+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/loan_dag.py for tasks to queue
+[2026-02-27T22:27:54.543+0000] {logging_mixin.py:188} INFO - [2026-02-27T22:27:54.542+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/loan_dag.py
+[2026-02-27T22:27:55.274+0000] {processor.py:840} INFO - DAG(s) 'Loan_Default_Prediction' retrieved from /opt/airflow/dags/loan_dag.py
+[2026-02-27T22:27:55.302+0000] {logging_mixin.py:188} INFO - [2026-02-27T22:27:55.302+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-02-27T22:27:55.308+0000] {logging_mixin.py:188} INFO - [2026-02-27T22:27:55.308+0000] {dag.py:3954} INFO - Setting next_dagrun for Loan_Default_Prediction to None, run_after=None
+[2026-02-27T22:27:55.314+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/loan_dag.py took 0.789 seconds
+[2026-02-27T22:28:25.617+0000] {processor.py:161} INFO - Started process (PID=1253) to work on /opt/airflow/dags/loan_dag.py
+[2026-02-27T22:28:25.618+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/loan_dag.py for tasks to queue
+[2026-02-27T22:28:25.621+0000] {logging_mixin.py:188} INFO - [2026-02-27T22:28:25.620+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/loan_dag.py
+[2026-02-27T22:28:26.210+0000] {processor.py:840} INFO - DAG(s) 'Loan_Default_Prediction' retrieved from /opt/airflow/dags/loan_dag.py
+[2026-02-27T22:28:26.222+0000] {logging_mixin.py:188} INFO - [2026-02-27T22:28:26.222+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-02-27T22:28:26.226+0000] {logging_mixin.py:188} INFO - [2026-02-27T22:28:26.225+0000] {dag.py:3954} INFO - Setting next_dagrun for Loan_Default_Prediction to None, run_after=None
+[2026-02-27T22:28:26.231+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/loan_dag.py took 0.626 seconds
+[2026-02-27T22:28:56.494+0000] {processor.py:161} INFO - Started process (PID=1283) to work on /opt/airflow/dags/loan_dag.py
+[2026-02-27T22:28:56.496+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/loan_dag.py for tasks to queue
+[2026-02-27T22:28:56.499+0000] {logging_mixin.py:188} INFO - [2026-02-27T22:28:56.499+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/loan_dag.py
+[2026-02-27T22:28:57.194+0000] {processor.py:840} INFO - DAG(s) 'Loan_Default_Prediction' retrieved from /opt/airflow/dags/loan_dag.py
+[2026-02-27T22:28:57.206+0000] {logging_mixin.py:188} INFO - [2026-02-27T22:28:57.206+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-02-27T22:28:57.210+0000] {logging_mixin.py:188} INFO - [2026-02-27T22:28:57.210+0000] {dag.py:3954} INFO - Setting next_dagrun for Loan_Default_Prediction to None, run_after=None
+[2026-02-27T22:28:57.215+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/loan_dag.py took 0.732 seconds
+[2026-02-27T22:29:27.494+0000] {processor.py:161} INFO - Started process (PID=1313) to work on /opt/airflow/dags/loan_dag.py
+[2026-02-27T22:29:27.496+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/loan_dag.py for tasks to queue
+[2026-02-27T22:29:27.499+0000] {logging_mixin.py:188} INFO - [2026-02-27T22:29:27.499+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/loan_dag.py
+[2026-02-27T22:29:28.122+0000] {processor.py:840} INFO - DAG(s) 'Loan_Default_Prediction' retrieved from /opt/airflow/dags/loan_dag.py
+[2026-02-27T22:29:28.132+0000] {logging_mixin.py:188} INFO - [2026-02-27T22:29:28.132+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-02-27T22:29:28.136+0000] {logging_mixin.py:188} INFO - [2026-02-27T22:29:28.136+0000] {dag.py:3954} INFO - Setting next_dagrun for Loan_Default_Prediction to None, run_after=None
+[2026-02-27T22:29:28.141+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/loan_dag.py took 0.653 seconds

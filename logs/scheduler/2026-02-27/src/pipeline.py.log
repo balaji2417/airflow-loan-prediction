@@ -181,3 +181,30 @@
 [2026-02-27T22:26:52.449+0000] {processor.py:161} INFO - Started process (PID=1164) to work on /opt/airflow/dags/src/pipeline.py
 [2026-02-27T22:26:52.450+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/src/pipeline.py for tasks to queue
 [2026-02-27T22:26:52.452+0000] {logging_mixin.py:188} INFO - [2026-02-27T22:26:52.452+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/src/pipeline.py
+[2026-02-27T22:26:53.194+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/src/pipeline.py
+[2026-02-27T22:26:53.205+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/src/pipeline.py took 0.759 seconds
+[2026-02-27T22:27:23.556+0000] {processor.py:161} INFO - Started process (PID=1194) to work on /opt/airflow/dags/src/pipeline.py
+[2026-02-27T22:27:23.562+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/src/pipeline.py for tasks to queue
+[2026-02-27T22:27:23.565+0000] {logging_mixin.py:188} INFO - [2026-02-27T22:27:23.565+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/src/pipeline.py
+[2026-02-27T22:27:24.219+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/src/pipeline.py
+[2026-02-27T22:27:24.227+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/src/pipeline.py took 0.677 seconds
+[2026-02-27T22:27:54.541+0000] {processor.py:161} INFO - Started process (PID=1224) to work on /opt/airflow/dags/src/pipeline.py
+[2026-02-27T22:27:54.541+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/src/pipeline.py for tasks to queue
+[2026-02-27T22:27:54.543+0000] {logging_mixin.py:188} INFO - [2026-02-27T22:27:54.543+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/src/pipeline.py
+[2026-02-27T22:27:55.272+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/src/pipeline.py
+[2026-02-27T22:27:55.299+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/src/pipeline.py took 0.762 seconds
+[2026-02-27T22:28:25.620+0000] {processor.py:161} INFO - Started process (PID=1254) to work on /opt/airflow/dags/src/pipeline.py
+[2026-02-27T22:28:25.621+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/src/pipeline.py for tasks to queue
+[2026-02-27T22:28:25.623+0000] {logging_mixin.py:188} INFO - [2026-02-27T22:28:25.622+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/src/pipeline.py
+[2026-02-27T22:28:26.209+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/src/pipeline.py
+[2026-02-27T22:28:26.218+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/src/pipeline.py took 0.604 seconds
+[2026-02-27T22:28:56.497+0000] {processor.py:161} INFO - Started process (PID=1284) to work on /opt/airflow/dags/src/pipeline.py
+[2026-02-27T22:28:56.498+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/src/pipeline.py for tasks to queue
+[2026-02-27T22:28:56.500+0000] {logging_mixin.py:188} INFO - [2026-02-27T22:28:56.500+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/src/pipeline.py
+[2026-02-27T22:28:57.191+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/src/pipeline.py
+[2026-02-27T22:28:57.200+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/src/pipeline.py took 0.708 seconds
+[2026-02-27T22:29:27.497+0000] {processor.py:161} INFO - Started process (PID=1314) to work on /opt/airflow/dags/src/pipeline.py
+[2026-02-27T22:29:27.498+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/src/pipeline.py for tasks to queue
+[2026-02-27T22:29:27.499+0000] {logging_mixin.py:188} INFO - [2026-02-27T22:29:27.499+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/src/pipeline.py
+[2026-02-27T22:29:28.119+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/src/pipeline.py
+[2026-02-27T22:29:28.126+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/src/pipeline.py took 0.634 seconds
