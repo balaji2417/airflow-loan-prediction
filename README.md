@@ -1,12 +1,40 @@
-# Loan Default Prediction Pipeline - Airflow Lab
+# Loan Default Prediction Pipeline - Airflow Lab 1
 
 **Author:** Balaji Sundar Anand Babu  
 **Course:** MLOps - Northeastern University  
+**Assignment:** Airflow Lab 1  
 **Date:** February 2026
 
 ---
 
-## Overview
+## Lab Overview
+
+This project is my submission for **Airflow Lab 1** in the MLOps course. The assignment required building an Apache Airflow DAG pipeline running in Docker containers, following the structure provided in [Professor Ramin Mohammadi's MLOps repository](https://github.com/raminmohammadi/MLOps/tree/main/Labs/Airflow_Labs/Lab_1).
+
+---
+
+## What I Changed from the Original Lab
+
+The original lab implements a **K-Means Clustering** pipeline to find optimal clusters using the elbow method. I created a different ML pipeline while maintaining the same Airflow/Docker structure:
+
+| Aspect | Original Lab (Professor's) | My Implementation |
+|--------|---------------------------|-------------------|
+| **ML Task** | Clustering (Unsupervised) | Classification (Supervised) |
+| **Algorithm** | K-Means | Random Forest Classifier |
+| **Dataset** | Generic clustering data | Loan applicant data (Finance domain) |
+| **Output** | Optimal number of clusters | Accuracy, Confusion Matrix, Feature Importance |
+| **Use Case** | Elbow method demonstration | Loan default prediction |
+
+### Files I Created
+
+- `dags/loan_dag.py` - Custom DAG for loan prediction (based on original `airflow.py` structure)
+- `dags/src/pipeline.py` - ML pipeline functions (load, preprocess, train, evaluate)
+- `dags/data/loan_data.csv` - Custom synthetic loan dataset
+- `README.md` - This documentation
+
+---
+
+## Project Description
 
 This project implements an end-to-end **Loan Default Prediction** machine learning pipeline using **Apache Airflow** orchestrated within **Docker** containers. The pipeline uses a **Random Forest Classifier** to predict whether a loan applicant will default based on various financial and demographic features.
 
@@ -210,13 +238,13 @@ After running the pipeline, the `evaluate_task` logs will display:
 
 ```
 📊 RESULTS:
-  Training Accuracy: 100.00%%
-  Test Accuracy: 100.00%
-
+[2026-02-27, 22:10:00 UTC] {logging_mixin.py:188} INFO -   Training Accuracy: 100.00%
+[2026-02-27, 22:10:00 UTC] {logging_mixin.py:188} INFO -   Test Accuracy: 100.00%
+[2026-02-27, 22:10:00 UTC] {logging_mixin.py:188} INFO - 
 📋 Confusion Matrix:
-  [[4  0]
-   [0  2]]
-
+[2026-02-27, 22:10:00 UTC] {logging_mixin.py:188} INFO -   [[4 0]
+ [0 2]]
+[2026-02-27, 22:10:00 UTC] {logging_mixin.py:188} INFO - 
 📈 Classification Report:
 [2026-02-27, 22:10:00 UTC] {logging_mixin.py:188} INFO -               precision    recall  f1-score   support
   No Default       1.00      1.00      1.00         4
@@ -224,7 +252,7 @@ After running the pipeline, the `evaluate_task` logs will display:
     accuracy                           1.00         6
    macro avg       1.00      1.00      1.00         6
 weighted avg       1.00      1.00      1.00         6
-
+[2026-02-27, 22:10:00 UTC] {logging_mixin.py:188} INFO - 
 🎯 Feature Importance Ranking:
 [2026-02-27, 22:10:00 UTC] {logging_mixin.py:188} INFO -   1. income: 0.2200
 [2026-02-27, 22:10:00 UTC] {logging_mixin.py:188} INFO -   2. employment_years: 0.1600
@@ -234,7 +262,7 @@ weighted avg       1.00      1.00      1.00         6
 [2026-02-27, 22:10:00 UTC] {logging_mixin.py:188} INFO -   6. credit_score: 0.1300
 [2026-02-27, 22:10:00 UTC] {logging_mixin.py:188} INFO -   7. previous_defaults: 0.0700
 [2026-02-27, 22:10:00 UTC] {logging_mixin.py:188} INFO -   8. loan_purpose_encoded: 0.0000
-  ...
+[2026-02-27, 22:10:00 UTC] {python.py:237} INFO - Done. Returned value was: Test Accuracy: 100.00%
 ```
 
 ---
